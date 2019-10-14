@@ -16,3 +16,8 @@ body {
     background-color: var(--swatch-foundation);
     font-family: 'Lexend Exa';
 }
+
+#jsTPS_heading
+{
+    font-size: 20pt;
+}
