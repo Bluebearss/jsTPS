@@ -141,3 +141,9 @@ class jsTPS
     }
 
 }
+
+module.exports =
+{
+    jsTPS_Transaction: jsTPS_Transaction,
+    jsTPS: jsTPS,
+}

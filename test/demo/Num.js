@@ -25,3 +25,8 @@ class Num
         this.num = this.num | mask;
     }
 }
+
+module.exports =
+{
+    Num: Num,
+}
