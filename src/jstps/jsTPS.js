@@ -127,14 +127,14 @@ class jsTPS
 
     toString()
     {
-        let text = "--Number of Transactions: " + this.getSize() + "\n";
-        text += "--Current Index on Stack: " + this.mostRecentTransaction + "\n";
-        text += "--Current Transaction Stack:\n";
+        let text = "CURRENT jsTPS:<br>--Number of Transactions: " + this.getSize() + "<br>";
+        text += "--Current Index on Stack: " + this.mostRecentTransaction + "<br>";
+        text += "--Current Transaction Stack:<br>";
         
         for (var i = 0; i <= this.mostRecentTransaction; i++)
         {
             let jT = this.transactions[i];
-            text += "----" + jT.toString() + "\n";
+            text += "----" + jT.toString() + "<br>";
         }
 
         return text;
@@ -142,8 +142,4 @@ class jsTPS
 
 }
 
-module.exports =
-{
-    jsTPS_Transaction: jsTPS_Transaction,
-    jsTPS: jsTPS,
-}
+export {jsTPS_Transaction, jsTPS};

@@ -1,4 +1,4 @@
-import jsTPS_Transaction from '../src/jstps/jsTPS.js'
+import {jsTPS_Transaction} from '../../src/jstps/jsTPS.js'
 
 class AddToNum_Transaction extends jsTPS_Transaction
 {
@@ -28,3 +28,5 @@ class AddToNum_Transaction extends jsTPS_Transaction
         return "Add " + this.amountToAdd;
     }
 }
+
+export default AddToNum_Transaction

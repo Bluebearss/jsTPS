@@ -1,4 +1,4 @@
-import jsTPS_Transaction from '../src/jstps/jsTPS.js'
+import {jsTPS_Transaction} from '../../src/jstps/jsTPS.js'
 
 class OrMask_Transaction extends jsTPS_Transaction
 {
@@ -25,3 +25,5 @@ class OrMask_Transaction extends jsTPS_Transaction
         return "Or Mask " + this.mask;
     }
 }
+
+export default OrMask_Transaction

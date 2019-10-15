@@ -26,7 +26,4 @@ class Num
     }
 }
 
-module.exports =
-{
-    Num: Num,
-}
+export default Num

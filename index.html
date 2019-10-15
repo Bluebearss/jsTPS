@@ -1,22 +1,11 @@
+<!doctype html>
 <html>
     <head>
         <title>jsTPS Test Program</title>
         <link href="./src/css/fonts/Lexend Exa/css.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./src/css/jsTPS_layout.css" />
         <link rel="stylesheet" type="text/css" href="./src/css/jsTPS_style.css" />
-
-        <script src="./src/jstps/jsTPS.js"></script>
-        <script src="./test/demo/Num.js"></script>
-        <script src="./test/demo/AddToNum_Transaction.js"></script>
-
-        <script>
-            window.onload = function ()
-            {
-                window.jsTPS = new jsTPS();
-                window.num = new Num();
-                
-            }
-        </script>
+        <script src="./test/demo/jsTPS_Tester.js" type="module"></script>
     </head>
 
     <body>
@@ -25,7 +14,25 @@
         </div>
 
         <div id = "jsTPS_output_container">
-            
+            <div id = "jsTPS_user_output">
+            </div>
+
+            <button id = "add_transaction">
+                Add a Transaction:
+            </button>
+            <input type = "text" id = "add_amount" placeholder="Enter an amount to add"/> <br />
+            <button id = "undo_transaction">
+                Undo a Transaction
+            </button> <br />
+            <button id = "redo_transaction">
+                Redo a Transaction
+            </button> <br />
+            <button id = "clear_transactions">
+                Clear All Transactions
+            </button> <br />
+            <button id = "reset_num_and_transactions">
+                Reset Num and Transactions
+            </button> <br />
         </div>
     </body>
 </html>
