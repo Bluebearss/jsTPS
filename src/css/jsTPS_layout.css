@@ -11,9 +11,34 @@ body {
     text-align: center;
 }
 
-button
+#jsTPS_output_container button
 {
-    margin: 0.5%;
+    margin: 2%;
     border-radius: 5px;
-    padding: 0.5%
+    padding: 1.3%
 }
+
+#add_amount
+{
+    margin-top: 2.5%;
+    float:inline-end;
+}
+
+#jsTPS_output_container
+{
+    float: left;
+}
+
+#jsTPS_unit_test_output_container
+{
+    float: right;
+}
+
+#jsTPS_unit_test_output_container button
+{
+    margin: 1%;
+    border-radius: 5px;
+    padding: 1.5%
+}
+
+

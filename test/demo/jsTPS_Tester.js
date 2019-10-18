@@ -19,6 +19,11 @@ let addAmountTextField = document.getElementById("add_amount");
 
 addTransactionButton.onclick = function()
 {
+    if (addAmountTextField.value === "")
+    {
+        return;
+    }
+
     if (!isNaN(addAmountTextField.value))
     {
         let addValue = parseInt(addAmountTextField.value);

@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>jsTPS Test Program</title>
-        <link rel="stylesheet" href="./node_modules/mocha/mocha.css">
         <link rel="stylesheet" type="text/css" href="./src/css/jsTPS_layout.css" />
         <link rel="stylesheet" type="text/css" href="./src/css/jsTPS_style.css" />
         <script src="./test/demo/jsTPS_Tester.js" type="module"></script>
+        <script src="./test/jsunit_test_beds/jsTPS_Unit_Tests.js" type="module"></script>
     </head>
 
     <body>
@@ -16,7 +16,7 @@
         <div id = "jsTPS_output_container">
             <div id = "jsTPS_user_output">
             </div>
-
+            
             <button id = "add_transaction">
                 Add a Transaction:
             </button>
@@ -35,19 +35,35 @@
             </button> <br />
         </div>
 
-        <div id = "mocha">
+        <div id = "jsTPS_unit_test_output_container">
+            <div id = "jsTPS_unit_test_heading">
+                jsTPS Unit Testing
+            </div>
 
+            <div id = "unit_test_buttons_container">
+                <button id = "test_add">
+                    testAdd()
+                </button>
+                <button id = "test_undo">
+                    testUndo()
+                </button>
+                <button id = "test_redo">
+                    testRedo()
+                </button><br />
+                <button id = "test_clear">
+                    testClear()
+                </button>
+                <button id = "test_and_mask">
+                    testAndMask()
+                </button>
+                <button id = "test_or_mask">
+                    testOrMask()
+                </button>
+            </div>
+            <div id = "jsTPS_unit_test_output">
+                
+            </div>
         </div>
-        <script src="./node_modules/mocha/mocha.js"></script>
-        <script src="./node_modules/chai/chai.js"></script>
-        <script>
-            mocha.setup('bdd');
-        </script>
 
-        <script src="./test/jsunit_test_beds/jsTPS_Unit_Tests.js" type="module"></script>
-        
-        <script>
-            mocha.run();
-        </script>
     </body>
 </html>
